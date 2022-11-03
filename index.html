@@ -29,7 +29,8 @@
 
       <div 
       class="container jt-container d-flex m-0"
-      @mouseover="autoPlayStop">
+      @mouseover="autoPlayStop()"
+      @mouseleave="getAutoPlay()">
         <!-- slider start -->
         <div class="slider">
           <img 

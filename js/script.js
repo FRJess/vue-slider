@@ -42,6 +42,8 @@ createApp({
         },
       ],
       activeImage: 0,
+
+      autoPlay: () => {}
     }
   },
 
@@ -64,19 +66,14 @@ createApp({
     },
 
     getAutoPlay(){
-      setInterval(() => {
+      this.autoPlay = setInterval(() => {
           this.nextPrev(true);
       }, 3000);
     },
 
     autoPlayStop(){
-      clearInterval(this.getAutoPlay);
+      clearInterval(this.autoPlay);
     },
-
-    // autoPlayStart(){
-    //   this.getAutoPlay = setInterval;
-    // }
-
   },
 
   mounted(){
