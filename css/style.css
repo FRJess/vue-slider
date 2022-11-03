@@ -1,0 +1,139 @@
+/* GENERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E2DADB;
+  color: white;
+}
+
+.hide{
+  display: none;
+}
+
+/* MAIN DIMENSIONS */
+
+.main-wrapper{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.jt-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 80%;
+  height: 90%;
+}
+
+/* SLIDER */
+
+.slider{
+  width: 100%;
+  height: 80%;
+}
+
+.items-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.slider img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.city-informations {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 100px;
+  width: 200px;
+  align-items:center;
+  justify-content:center;
+}
+
+/* THUMBNAIL */
+
+.thumbs{
+  position: relative;
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+}
+
+.thumbs-image{
+  width: calc(100% / 5);
+  height: 100%;
+  object-fit:cover;
+}
+
+.thumbs-none{
+  opacity: .5;
+  border: none;
+}
+
+.thumbs-active{
+  opacity: 1;
+  border: 2px solid white;
+}
+
+/* BUTTONS */
+
+.jt-buttons{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 100;
+}
+
+.btn-arrow{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .15);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  z-index: 100;
+}
+
+.btn-arrow:hover{
+  color: #E9D758;
+  background-color: white;
+}
+
+.btn-arrow.left{
+  margin-left: 30px;
+}
+
+.btn-arrow.right{
+  margin-right: 30px;
+}
