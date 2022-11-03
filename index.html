@@ -35,7 +35,12 @@
         <div class="slider">
           <img 
           :src="cities[activeImage].image" 
-          :alt="cities[activeImage].name">        
+          :alt="cities[activeImage].name">
+          <div class="city-informations bg-dark bg-opacity-25 p-2 border border-dark border-opacity-10 rounded ">
+            <div class="name">{{cities[activeImage].name}}</div>
+            <div class="country">{{cities[activeImage].country}}</div>
+            <div class="dimension">{{cities[activeImage].dimension}}</div>
+          </div>        
         </div>
         <!-- slider end -->
   
