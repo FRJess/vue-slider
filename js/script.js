@@ -12,7 +12,6 @@ createApp({
   data(){
     return{
 
-
       cities: [
         {
           name :'San Francisco',
@@ -81,6 +80,7 @@ createApp({
       }, 3000);
     },
 
+    //loop stop
     autoPlayStop(){
       clearInterval(this.autoPlay);
     },
