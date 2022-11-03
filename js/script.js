@@ -8,8 +8,11 @@ const {createApp} = Vue;
 
 createApp({
 
+  // MY OBJECTS
   data(){
     return{
+
+
       cities: [
         {
           name :'San Francisco',
@@ -42,17 +45,22 @@ createApp({
           image: 'img/Madrid.jpg'
         },
       ],
+
       activeImage: 0,
 
       autoPlay: () => {}
     }
   },
 
+  // MY FUNCTIONS
   methods:{
+
+    //change image at click
     changeImage(index){
       this.activeImage = index;
     },
 
+    //infinite loop to change image
     nextPrev(isNext){
       isNext ? this.activeImage++ : this.activeImage--;
 
@@ -66,6 +74,7 @@ createApp({
 
     },
 
+    //loop automatic start and stop
     getAutoPlay(){
       this.autoPlay = setInterval(() => {
           this.nextPrev(true);
@@ -77,6 +86,7 @@ createApp({
     },
   },
 
+  //when opening page
   mounted(){
     this.getAutoPlay();
 
