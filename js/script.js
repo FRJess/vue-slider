@@ -47,7 +47,7 @@ createApp({
 
       activeImage: 0,
 
-      autoPlay: () => {}
+      autoPlay: '',
     }
   },
 
